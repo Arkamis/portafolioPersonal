@@ -3,31 +3,67 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MiPortafolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script> -->
+    <title>Miguel Rodriguez</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
 </head>
-<body onload="main()">
+<body>
     <header>
-        <nav></nav>
+        <div></div>
+        <div id="bannerImg">
+            <div>
+                <p>Miguel Rodriguez</p>
+                <br>
+                <p>Ingenieria de Software</p>
+            </div>
+        </div>
     </header>
-    <article>
-
-    </article>
-    <article>
-
-    </article>
-    <aside>
-        
-    </aside>
+    <nav id="menu">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+            <li><a>Projects</a></li>
+        </ul>
+    </nav>
+    <section class="main-content">
+        <h3>Acerca de mi</h3>
+        <p></p>
+    </section>
+    <section class="main-content">
+        <h3>Educaci&oacute;n</h3>
+        <p></p>
+    </section>
+    <section class="main-content">
+        <h2><center>Skills</center></h2>
+        <div class="skills">
+            <h4>Lenguajes</h4>
+            <img alt="Javascript" class="skill">
+            <img alt="python" class="skill">
+            <img alt="c#" class="skill">
+            <img alt="SQL" class="skill">
+        </div>
+        <div class="skills">
+            <h4>Porcentaje</h4>
+            <div class="js"></div><p>%</p>
+            <div class="py"></div><p>%</p>
+            <div class="sql"></div><p>%</p>
+        </div>
+    </section>
     <footer>
-        <div><p>Pagina Desarrollada por: Miguel Rodriguez.</p><p id="year"></p></div>
+        <div><p>Pagina Desarrollada por: Miguel Rodriguez. CopyRight&#169; 2019.</p></div>
+        <address>
+            Universidad de Colima <br>
+            Av. Universidad #10<br>
+            Colima, Colima. M&eacute;xico.
+        </address>
+        <div>
+            <h2>Mis redes</h2>
+            <div class="logos-redes">
+                <img alt="fb">
+                <img alt="github">
+                <img alt="linkedin">
+            </div>
+        </div>
     </footer>
-    <script>
-        function main() {
-           document.getElementById("year").innerHTML = "<p>Copyrigth <icon>&reg</icon>."+new Date().getFullYear()+"</p>";
-        }
-        </script>
 </body>
 </html>
