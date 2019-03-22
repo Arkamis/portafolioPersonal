@@ -1,0 +1,111 @@
+html{
+    font-size: 16px;
+}
+#bannerImg, #logo-udc{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: grey;
+}
+#bannerImg img{
+    width: 100%;
+    display: block;
+    height: auto;
+    
+}
+.insideBanner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insideBanner > p {
+    font-family: 'Courier New', Courier, monospace;
+    color: hsla(111, 96%, 48%, 0.98);
+    font-size: 2em;
+}
+
+nav {
+    top: 0;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+}
+
+nav ul {
+    margin-left: 8.5%;
+}
+
+nav ul li {
+    display: inline;
+    padding: 2%;
+    position: relative;
+}
+.navlist-item {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.navlist-item:hover {
+    color: aqua;
+    font-size: 2.5em;
+}
+
+.navlist-item:active{
+    color: aqua;
+    text-shadow: 2pt;
+}
+
+/* section about */
+
+#about {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 2.5%;
+}
+
+#about > article {
+    max-width: 100%;
+    height: auto;
+    padding: 2% 15%;
+}
+#about article h3 {
+    font-size: 3em;
+    font-family: 'Allan';
+    color: black;
+    display: inline-block;
+}
+.main-content {
+    background-color: rgba(240, 248, 255, 0.774);
+}
+
+.aboutme p{
+    text-align: center;
+    padding:0 15%;
+}
+
+.aboutme img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    border-radius: 1000px
+}
+.font-titles{
+    font-size: 2.5em;
+    font-family: 'Allan';
+}
+.font-subtitle {
+    font-size: 2em;
+    font-family: "Allan", serif;
+    color: rgb(90, 90, 80);
+}
+.font-content {
+    font-family: Aclonica, serif;
+}
