@@ -11,7 +11,9 @@ html{
     width: 100%;
     display: block;
     height: auto;
-    
+    -webkit-box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
 }
 .insideBanner {
     position: absolute;
@@ -66,7 +68,7 @@ nav ul li {
     width: 100%;
     height: auto;
     position: relative;
-    margin-bottom: 2.5%;
+    padding-bottom: 0%;
 }
 
 #about > article {
@@ -84,7 +86,7 @@ nav ul li {
     background-color: rgba(240, 248, 255, 0.774);
 }
 
-.aboutme p{
+.main-content p{
     text-align: center;
     padding:0 15%;
 }
@@ -108,4 +110,243 @@ nav ul li {
 }
 .font-content {
     font-family: Aclonica, serif;
+}
+
+/* 
+***********************************
+---INICIA LA SECCION DE ESTUDIOS---
+***********************************
+ */
+.main-content2 {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+.educacion img {
+    object-fit: cover;
+    max-width: 90%;
+    height: auto;
+    margin: 5%;
+    border-radius: 2%;
+    -webkit-box-shadow: -9px 13px 19px -3px rgba(161,159,161,1);
+    -moz-box-shadow: -9px 13px 19px -3px rgba(161,159,161,1);
+    box-shadow: -9px 13px 19px -3px rgba(161,159,161,1);
+}
+
+.educacion img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.educacion {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+/* Creo un grid para utilizarlo en mis secciones */
+ .item1-grid {
+    grid-area: header;
+    max-width: 100%;
+    place-content: start strench;     
+}
+.item2-grid {
+    grid-area: sidebar;
+    max-width: 100%;
+}
+.item3-grid{
+    grid-area: main;
+    max-width: 100%;
+}
+.item4-grid {
+    grid-area: footer;
+}
+
+/* .universidad .item1-grid p{
+    text-align: right;
+    padding-right: 25%; 
+} */
+/* 
+--------GRID DE ESTUDIO UNIVERSITARIO-----------
+*/
+.universidad.grid-container {
+    display: grid;
+    margin: 1% 10%;
+    grid-template-columns: auto 30% 30% auto;
+    grid-template-rows: 5% 45% 45%;
+    grid-template-areas: 
+      "header header header ."
+      "main main sidebar sidebar"
+      "footer footer footer footer";
+    max-width: 100%;
+}
+.item3-grid ul, .item2-grid ul{
+   list-style-image: url('../imgs/contrast.png');
+}
+.bachillerato .item3-grid ul li, .bachillerato .item3-grid p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+.universidad .item2-grid ul li, .universidad .item2-grid p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+.item4-grid p{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+/* 
+--------GRID DE ESTUDIO Prepa-----------
+*/
+.bachillerato.grid-container {
+    display: grid;
+    margin: 1% 10%;
+    grid-template-columns: auto 30% 30% auto;
+    grid-template-rows: 5% 45% 45%;
+    grid-template-areas: 
+      ". header header header"
+      "main main sidebar sidebar"
+      "footer footer footer footer";
+    max-width: 100%;
+}
+
+/* ***************************************
+-----INICIA FOOTER DE LA PAGINA WEB---------
+*************************** *************/
+footer{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    font-family: "Allen";
+    background-color: #2fee2f6b;
+    padding: 3% 15%;
+    padding-top: 0%;
+}
+/* ******************
+    GRID DE FOOTER
+*********************/
+.item1-Fgrid {
+    grid-area: dev;
+    align-self: stretch;     
+}
+
+.item2-Fgrid {
+    grid-area: info;
+    align-self: stretch;
+}
+.item3-Fgrid{
+    grid-area: main;
+    align-self: start;
+}
+.item4-Fgrid {
+    grid-area: conc;
+    justify-self: stretch;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "dev  main "
+      "info  conc";
+}
+.item1-Fgrid p{
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+.item1-Fgrid p.font-subtitle, .item3-Fgrid p{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    font-family: "Allan", serif;
+    font-size: 2em;
+    text-align: justify;
+}
+.item2-Fgrid address{
+    margin-top: 3%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+.item4-Fgrid img{
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    --webkit-box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    -moz-box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    height: auto;
+    margin: 1% 1.5%;
+}
+.item4-Fgrid img:hover{
+     border-radius: 20px;
+    --webkit-box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    -moz-box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    box-shadow: 5px 12px 11px -2px rgba(18,13,18,0.4);
+    transform:scale(1.25);
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contenedor {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } 
+
+/* ********************************
+  INICIO DE TEMA DE INTERES SOBRE IOT
+ ***********************************  */
+.aling-center {
+    text-align: center;
+}
+#iot {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 0%;
+}
+img.iot {
+    -webkit-box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: -3px 8px 11px -2px rgba(0,0,0,0.75);
+    border-radius: 10%;
+}
+#iot > article {
+    max-width: 100%;
+    height: auto;
+    padding: 2% 15%;
+}
+.iot-info {
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

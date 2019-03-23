@@ -17,8 +17,8 @@
                         <ul>
                             <li><a class="navlist-item" href="#"><strong>Home</strong></a></li>
                             <li><a class="navlist-item" href="#about">About</a></li>
-                            <li><a class="navlist-item" href="contact.html">Contact</a></li>
-                            <li><a class="navlist-item" href="projects.html">Projects</a></li>
+                            <li><a class="navlist-item" href="#contactme">Contact</a></li>
+                            <li><a class="navlist-item" href="investigacion.html">IoT</a></li>
                         </ul>
                     </nav>
             <img src="../imgs/main.gif" alt="infite" id="=ImgBanner">
@@ -31,7 +31,7 @@
     </header>
 
     <section id="about">
-    <article class="main-content aboutme font-title">
+    <article class="main-content2 aboutme font-title">
         <div>
             <h3>Sobre mi...</h3>
             <p class="font-titles">Miguel Rodriguez <br>
@@ -46,37 +46,54 @@
             </div>
         </div>
     </article>
-    <article class="main-content2">
-        <h3>Educaci&oacute;n</h3>
-        <div class="educacion bachillerato">
-            <h5 class="font-subtitle">Bachillerato</h5>
-            <img src="../imgs/prepa" alt="preparatoria"/>
-            <address>
-                Fecha: 2014 - 2017.<br>
-                Lugar: Manzanillo, Colima.<br>
-                Carrera: Analista T&eacute;cnico programador.<br>
-                Comentarios:
-            </address>
-            <p class="educacion">En la preparatoria aprendi los conceptos basicos.
-                Trabaje con BDD, POO, C++, C# y JAVA para moviles.
-            </p>
+    <article class="main-content">
+        <p class="font-titles title-section2">Educaci&oacute;n</p>
+        <div class="educacion bachillerato grid-container">
+            <div class="item1-grid">
+                <p class="font-subtitle">Bachillerato</p>
+            </div>
+            <div class="item2-grid">
+                <img src="../imgs/prepa.png" alt="preparatoria"/>
+            </div>
+            <div class="item3-grid">
+                <ul>
+                    <li>Fecha: 2014 - 2017</li> 
+                    <li>Lugar: Manzanillo, Colima.</li> 
+                    <li>Carrera: Analista T&eacute;cnico programador.</li>
+                </ul>
+                <p>Comentarios:</p>
+            </div>
+            <div class="item4-grid">
+                <p class="educacion">En la preparatoria aprendi los conceptos basicos.
+                Trabaje con BDD, POO, C++, C# y JAVA para moviles.</p>
+            </div>   
         </div>
         <hr>
-        <div class="educacion universidad">
-            <h5 class="font-subtitle">Universidad</h5>
-            <img src="../imgs/prepa" alt="preparatoria"/>
-            <address>
-                Fecha: 2017 - Actual.<br>
-                Lugar: Colima, Colima.<br>
-                Carrera: Ingenieria en Software.<br>
-                Comentarios:
-            </address>
-            <p class="educacion">En la preparatoria aprendi los conceptos basicos.
-                Trabaje con BDD, POO, C++, C# y JAVA para moviles.
-            </p>
-        </div>
+        <div class="educacion universidad grid-container">
+                <div class="item1-grid">
+                    <p class="font-subtitle">Universidad</p>
+                </div>
+                <div class="item2-grid">
+                    <ul>
+                        <li>Fecha: 2017 - Actual.</li> 
+                        <li>Lugar: Colima, Colima.</li> 
+                        <li>Carrera: Ingenieria en Software.</li>
+                    </ul>
+                    <p>Comentarios:</p>
+                </div>
+                <div class="item3-grid">
+                    <img src="../imgs/universidad.jpg" alt="preparatoria"/>
+                </div>
+                <div class="item4-grid">
+                    <p class="educacion">Actualmente curso la carrera de ingenieira de software en la facultad de telematica.
+                        Donde mas que nada he aprendido sobre control de un proyecto de software y he adquirido varias tecnicas de
+                        diseno y automatizacion de base datos.
+                    </p>
+                </div>   
+            </div>
+            <hr>
     </article>
-    <article class="main-content">
+    <!-- <article class="main-content2">
         <h2><center>Skills</center></h2>
         <div class="skills">
             <h4>Lenguajes</h4>
@@ -91,21 +108,45 @@
             <div class="py"></div><p>%</p>
             <div class="sql"></div><p>%</p>
         </div>
+    </article> -->
+    <article class="main-content2 contenedor" id="contactme">
+        <p class="font-titles">Hagamos algo juntos!</p>
+        <form action="action_page.php">
+        
+            <label for="nombres">Nombre(s)</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nombre...">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="lname" name="lastname" placeholder="Apellidos...">
+        
+            <label for="asunto">Mensaje</label>
+            <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
     </article>
     </section>
     <footer>
-        <div><p>Pagina Desarrollada por: Miguel Rodriguez. CopyRight&#169; 2019.</p></div>
-        <address>
-            Universidad de Colima <br>
-            Av. Universidad #10<br>
-            Colima, Colima. M&eacute;xico.
-        </address>
-        <div>
-            <h2>Mis redes</h2>
-            <div class="logos-redes">
-                <img alt="fb">
-                <img alt="github">
-                <img alt="linkedin">
+        <div class="footer-container">
+            <div class="item1-Fgrid">
+                <p class="font-subtitle">Desarrollador</p>
+                <p>Miguel Rodriguez&#169; 2019.</p>
+                <p>Grado y Grupo: 4K</p>
+                
+            </div>
+            <div class="item2-Fgrid">
+                <address>
+                    Universidad de Colima <br>
+                    Facultad de Telematica <br>
+                    Av. Universidad #10<br>
+                    Colima, Colima. M&eacute;xico.
+                </address>
+            </div>
+            <div class="item3-Fgrid">
+                <p class="font-subtitle">Mis redes sociales</p>
+            </div>
+            <div class="item4-Fgrid">
+                <a href="https://www.facebook.com/miguelantonio.rodriguezperez.9" target="_blank"><img class="fb-icon" src="../imgs/facebook.png" alt="fb"/></a>
+                <a href="https://github.com/Arkamis" target="_blank"><img class="gh-icon" src="../imgs/github.png" alt="github" /></a>
+                <a href="https://www.linkedin.com/in/miguel-antonio-rodriguez-perez-54910a176/" target="_blank"><img class="ln-icon" src="../imgs/linkedin.png" alt="linkedin"/></a>
             </div>
         </div>
     </footer>
